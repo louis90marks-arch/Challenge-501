@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { ValidationResult } from "../types";
+import { ValidationResult } from "../types.ts";
 
 // Initialize AI outside the function to reuse the instance
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });

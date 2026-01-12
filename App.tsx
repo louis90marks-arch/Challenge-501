@@ -1,12 +1,12 @@
 
 import React, { useState, useCallback } from 'react';
-import { GameStatus, Club, PlayerEntry, ValidationResult } from './types';
-import { TARGET_SCORE } from './constants';
-import { verifyPlayerAppearance } from './services/geminiService';
-import ClubSelector from './components/ClubSelector';
-import ScoreBoard from './components/ScoreBoard';
-import PlayerInput from './components/PlayerInput';
-import HistoryList from './components/HistoryList';
+import { GameStatus, Club, PlayerEntry, ValidationResult } from './types.ts';
+import { TARGET_SCORE } from './constants.tsx';
+import { verifyPlayerAppearance } from './services/geminiService.ts';
+import ClubSelector from './components/ClubSelector.tsx';
+import ScoreBoard from './components/ScoreBoard.tsx';
+import PlayerInput from './components/PlayerInput.tsx';
+import HistoryList from './components/HistoryList.tsx';
 
 const App: React.FC = () => {
   const [status, setStatus] = useState<GameStatus>(GameStatus.SELECTING_CLUB);
@@ -125,7 +125,6 @@ const App: React.FC = () => {
                 </div>
               )}
               
-              {/* Fix: removed unintentional comparison because status is narrowed to PLAYING in this block */}
               <PlayerInput 
                 onSubmit={handlePlayerSubmit} 
                 isLoading={isLoading} 

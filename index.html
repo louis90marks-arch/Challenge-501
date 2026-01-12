@@ -17,6 +17,10 @@
             background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
         }
     </style>
+    <script>
+        // Shim process.env for browser compatibility before imports
+        window.process = window.process || { env: {} };
+    </script>
     <script type="importmap">
     {
       "imports": {
