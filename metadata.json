@@ -1,0 +1,5 @@
+{
+  "name": "501 Challenge",
+  "description": "A strategic football quiz game where two players take turns naming players from a selected English club to reach exactly 501 competitive appearances without going bust.",
+  "requestFramePermissions": []
+}
