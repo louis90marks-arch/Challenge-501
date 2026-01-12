@@ -125,10 +125,11 @@ const App: React.FC = () => {
                 </div>
               )}
               
+              {/* Fix: removed unintentional comparison because status is narrowed to PLAYING in this block */}
               <PlayerInput 
                 onSubmit={handlePlayerSubmit} 
                 isLoading={isLoading} 
-                disabled={status === GameStatus.FINISHED}
+                disabled={false}
                 clubName={selectedClub.name}
               />
             </div>
